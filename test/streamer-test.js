@@ -32,7 +32,7 @@ describe('Streamer Tests: ', async () => {
     it('Can get shardID', async function () {
         AWS.config.loadFromPath('./config.json');
         let params = {
-            StreamName: 'my-stream-kinesis'
+            StreamName: 'thomas-stream'
         };
         const result = await kinesis.listShards(params).promise()
             .then(data => {
